@@ -19,4 +19,4 @@ jobs:
 
       - name: Deploy on EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "cd /var/www/myciapp/linux-ec2-ci-cd-site && ./deploy.sh"
+          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "cd /var/www/task4/task4 && ./deploy.sh"
